@@ -1,39 +1,47 @@
 import React from 'react';
-import classNames from 'classnames';
-import Button from '@material-ui/core/Button';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import Grid from '@material-ui/core/Grid';
-import Typography from '@material-ui/core/Typography';
-import { withStyles } from '@material-ui/core/styles';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
+import Container from '@mui/material/Container';
+import Stack from '@mui/material/Stack';
 
 const Hero = () => {
     return (
     <main>
-        <div className={classes.heroUnit}>
-            <div className={classes.heroContent}>
-                <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
-                    Album layout
-                </Typography>
-                <Typography variant="h6" align="center" color="textSecondary" paragraph>
-                    We'll write something catchy here, I can't really think of anything right now
-                    so bare with me. Someone feel free to replace this if you have anything better.
-                </Typography>
-                <div className={classes.heroButtons}>
-                    <Grid container spacing={16} justify="center">
-                        <Grid item>
-                            <Button variant="contained" color="primary">
-                                Main call to action
-                            </Button>
-                        </Grid>
-                        <Grid item>
-                            <Button variant="outlined" color="primary">
-                                Secondary action
-                            </Button>
-                        </Grid>
-                    </Grid>
-                </div>
-            </div>
-        </div>
+            <Box
+                sx={{
+                    display: 'flex',
+                    bgcolor: 'background.paper',
+                    pt: 8,
+                    pb: 6,
+                }}
+            >
+                <Container maxWidth="sm">
+                    <Typography
+                        component="h1"
+                        variant="h2"
+                        align="center"
+                        color="text.primary"
+                        gutterBottom
+                    >
+                        Welcome to our SETAP app
+                    </Typography>
+                    <Typography variant="h5" align="center" color="text.secondary" paragraph>
+                        Something short and leading about the collection below—its contents,
+                        the creator, etc. Make it short and sweet, but not too short so folks
+                        don&apos;t simply skip over it entirely.
+                    </Typography>
+                    <Stack
+                        sx={{ pt: 4 }}
+                        direction="row"
+                        spacing={2}
+                        justifyContent="center"
+                    >
+                        <Button variant="contained">Main call to action</Button>
+                        <Button variant="outlined">Secondary action</Button>
+                    </Stack>
+                </Container>
+            </Box>
     </main>
     )
 };
