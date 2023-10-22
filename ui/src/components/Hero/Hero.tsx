@@ -10,6 +10,7 @@ const Hero = () => {
     <main>
             <Box
                 sx={{
+                    marginTop: 16,
                     display: 'flex',
                     bgcolor: 'background.paper',
                     pt: 8,
