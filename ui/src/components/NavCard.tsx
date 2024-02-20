@@ -22,7 +22,7 @@ const NavCard = () => {
             />
             <CardContent sx={{ flexGrow: 1 }}>
                 <Typography gutterBottom variant="h5" component="h2">
-                    Heading
+                    Flashcard route
                 </Typography>
                 <Typography>
                     This can be used for whatever. We can probably just keep this simple
