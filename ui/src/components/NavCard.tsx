@@ -6,7 +6,7 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 
-const NavCard = () => {
+const NavCard = ({ title, desc }: { title: string, desc: string }) => {
     return (
     <Grid item xs={12} sm={6} md={4}>
         <Card
@@ -22,16 +22,14 @@ const NavCard = () => {
             />
             <CardContent sx={{ flexGrow: 1 }}>
                 <Typography gutterBottom variant="h5" component="h2">
-                    Flashcard route
+                    { title }
                 </Typography>
                 <Typography>
-                    This can be used for whatever. We can probably just keep this simple
-                    and put some navigation items in here.
+                    { desc }
                 </Typography>
             </CardContent>
             <CardActions>
                 <Button size="small">View</Button>
-                <Button size="small">Edit</Button>
             </CardActions>
         </Card>
     </Grid>
