@@ -1,7 +1,6 @@
-import Login from './pages/Login/login'
-import SystemAppBar from './components/SystemAppBar/systemAppBar';
-import Hero from './components/Hero/hero';
-import LandingNav from './components/LandingNav/landingNav';
+import SystemAppBar from './components/systemAppBar/SystemAppBar';
+import Hero from './components/hero/Hero';
+import LandingNav from './components/landingNav/LandingNav';
 import './App.css'
 
 
@@ -9,7 +8,6 @@ function App() {
 
   return (
     <>
-    {/* <Login /> */}
     <SystemAppBar />
     <Hero />
     <LandingNav />

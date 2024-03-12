@@ -4,9 +4,10 @@ import CardMedia from '@mui/material/CardMedia';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
+import { Link } from "react-router-dom";
 
-const NavCard = ({ title, desc }: { title: string, desc: string }) => {
+
+const NavCard = ({ title, desc, routePath }: { title: string, desc: string, routePath: string }) => {
     return (
     <Grid item xs={12} sm={6} md={4}>
         <Card
@@ -29,7 +30,7 @@ const NavCard = ({ title, desc }: { title: string, desc: string }) => {
                 </Typography>
             </CardContent>
             <CardActions>
-                <Button size="small">View</Button>
+                <Link to={routePath}>View</Link>
             </CardActions>
         </Card>
     </Grid>
