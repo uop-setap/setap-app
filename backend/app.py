@@ -8,7 +8,9 @@ from firebase_admin import credentials, firestore, auth, initialize_app
 app = Flask(__name__)
 
 # initialize the Firebase SDK
-default_app = firebase_admin.initialize_app()
+cred = credentials.Certificate('key.json')
+app = firebase_admin.initialize_app(cred)
+db = firestore.client()
 
 @app.route("/")
 def root():
