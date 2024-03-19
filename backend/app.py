@@ -12,6 +12,17 @@ cred = credentials.Certificate('key.json')
 app = firebase_admin.initialize_app(cred)
 db = firestore.client()
 
-@app.route("/")
+
+# Will split these routes up eventually via blueprints
+@app.route('/')
 def root():
     return "<p>Server is running</p>"
+
+@app.route('/flashcard', methods=('GET', 'POST'))
+def flashcard():
+    if request.method == 'POST':
+        # TODO - implement flashcard creation via this route
+        return 'Implement flashcard creation here'
+    else:
+        # TODO - implement flashcard retrival via this route
+        return 'Implement flashcard retrival here' 
