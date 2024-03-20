@@ -4,7 +4,7 @@ Authors: Oscar McPherson, Brad, Sarah, Ben, Prajob, Harona
 ===================================
 
 This is a flashcard application.
-
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 Check out the :doc:`usage` section for further information, including
 how to :ref:`installation` the project.
 
