@@ -1,10 +1,9 @@
-Welcome to Lumache's documentation!
+UOP Software Engineering Theory and Practice Project - Group 18
+===================================
+Authors: Oscar McPherson, Brad, Sarah, Ben, Prajob, Harona
 ===================================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
+This is a flashcard application.
 
 Check out the :doc:`usage` section for further information, including
 how to :ref:`installation` the project.
